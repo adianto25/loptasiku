@@ -48,7 +48,8 @@
             </div>
         <?php endif;?>
         
-        <form action="/login/auth" method="post">
+        <form action="<?= base_url('login/auth') ?>" method="post">
+            <?= csrf_field() ?>
             <div class="mb-3">
                 <label class="form-label fw-bold">Username</label>
                 <input type="text" name="username" class="form-control" required placeholder="Masukkan username">

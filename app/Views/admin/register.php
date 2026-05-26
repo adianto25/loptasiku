@@ -49,7 +49,8 @@
             </div>
         <?php endif;?>
         
-        <form action="/register/auth" method="post">
+        <form action="<?= base_url('register/auth') ?>" method="post">
+            <?= csrf_field() ?>
             <div class="mb-3">
                 <label class="form-label fw-bold">Username</label>
                 <input type="text" name="username" value="<?= set_value('username') ?>" class="form-control" required placeholder="Minimal 4 karakter">
