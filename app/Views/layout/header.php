@@ -65,7 +65,7 @@
 
         /* Hero Section Full 100vh */
         .hero-section {
-            background: linear-gradient(rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.95)), url('/assets/images/wallpaper.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.95)), url('/assets/images/wallpaper.jpg') top center/cover no-repeat;
             color: white;
             padding: 100px 0;
             position: relative;
