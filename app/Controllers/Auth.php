@@ -28,10 +28,16 @@ class Auth extends BaseController
                 $ses_data = [
                     'id' => $data['id'],
                     'username' => $data['username'],
+                    'role' => $data['role'],
                     'logged_in' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/admin');
+                
+                if ($data['role'] === 'admin') {
+                    return redirect()->to('/admin');
+                } else {
+                    return redirect()->to('/');
+                }
             }else{
                 $session->setFlashdata('msg', 'Password salah.');
                 return redirect()->to('/login');
@@ -60,7 +66,8 @@ class Auth extends BaseController
             $model = new UserModel();
             $data = [
                 'username' => $this->request->getVar('username'),
-                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'role' => 'user'
             ];
             $model->save($data);
             return redirect()->to('/login');

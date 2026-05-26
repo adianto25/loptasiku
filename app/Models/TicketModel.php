@@ -13,7 +13,7 @@ class TicketModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'ticket_type', 'quantity', 'buyer_name', 'buyer_institution',
+        'user_id', 'ticket_type', 'quantity', 'buyer_name', 'buyer_institution',
         'buyer_phone', 'buyer_email', 'total_price', 'payment_method',
         'payment_account', 'payment_code', 'status'
     ];

@@ -28,6 +28,16 @@
                     <a class="nav-link" href="#kontak">Kontak</a>
                 </li>
             </ul>
+            <div class="d-flex ms-lg-4 mt-3 mt-lg-0 align-items-center">
+                <?php if(session()->get('logged_in')): ?>
+                    <span class="navbar-text me-3 text-white fw-bold">
+                        Halo, <?= esc(session()->get('username')) ?>
+                    </span>
+                    <a href="<?= base_url('logout') ?>" class="btn btn-outline-light rounded-pill px-4 fw-bold">Logout</a>
+                <?php else: ?>
+                    <a href="<?= base_url('login') ?>" class="btn btn-outline-light rounded-pill px-4 fw-bold">Login / Daftar</a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </nav>

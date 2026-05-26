@@ -11,6 +11,7 @@ class UserSeeder extends Seeder
         $data = [
             'username' => 'admin',
             'password' => password_hash('12345', PASSWORD_DEFAULT),
+            'role'     => 'admin',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ];

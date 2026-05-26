@@ -26,24 +26,25 @@ class Ticket extends ResourceController
             return $this->failValidationErrors($this->validator->getErrors());
         }
 
-        $data = $this->request->getPost();
+        $data = $this->request->getJSON();
         
         // Calculate price based on type
-        $price = $data['ticket_type'] === 'early' ? 15000 : 18000;
-        $totalPrice = $price * (int)$data['quantity'];
+        $price = $data->ticket_type === 'early' ? 15000 : 18000;
+        $totalPrice = $price * (int)$data->quantity;
         
         $paymentCode = 'PAY' . substr(time(), -6) . str_pad(rand(0, 999), 3, '0', STR_PAD_LEFT);
 
         $ticketData = [
-            'ticket_type' => $data['ticket_type'],
-            'quantity' => $data['quantity'],
-            'buyer_name' => $data['name'],
-            'buyer_institution' => $data['institution'],
-            'buyer_phone' => $data['phone'],
-            'buyer_email' => $data['email'],
+            'user_id' => session()->get('id'),
+            'ticket_type' => $data->ticket_type,
+            'quantity' => $data->quantity,
+            'buyer_name' => $data->name,
+            'buyer_institution' => $data->institution,
+            'buyer_phone' => $data->phone,
+            'buyer_email' => $data->email,
             'total_price' => $totalPrice,
-            'payment_method' => $data['payment_method'],
-            'payment_account' => $data['payment_account'] ?? '',
+            'payment_method' => $data->payment_method,
+            'payment_account' => $data->payment_account ?? '',
             'payment_code' => $paymentCode,
             'status' => 'pending'
         ];
@@ -60,10 +61,10 @@ class Ticket extends ResourceController
 
     public function myTickets()
     {
-        // For simplicity in this demo, we might fetch all tickets or by email.
-        // The original logic just used local array / dataSdk.
-        // Let's return all tickets for the demo (not secure for prod, but mimics the SDK).
-        $tickets = $this->model->findAll();
+        if (!session()->get('logged_in')) {
+            return $this->response->setJSON([]);
+        }
+        $tickets = $this->model->where('user_id', session()->get('id'))->findAll();
         return $this->respond($tickets);
     }
 }

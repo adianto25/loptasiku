@@ -15,6 +15,11 @@ class CreateTicketsTable extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
+            'user_id' => [
+                'type'           => 'INT',
+                'constraint'     => 11,
+                'unsigned'       => true,
+            ],
             'ticket_type' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '50',
@@ -70,6 +75,7 @@ class CreateTicketsTable extends Migration
             ],
         ]);
         $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('tickets');
     }
 
