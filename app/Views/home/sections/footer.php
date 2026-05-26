@@ -22,8 +22,7 @@
                 <ul class="list-unstyled">
                     <li class="mb-2"><a href="#beranda" class="text-white-50 text-decoration-none hover-white">Beranda</a></li>
                     <li class="mb-2"><a href="#tentang" class="text-white-50 text-decoration-none hover-white">Tentang</a></li>
-                    <li class="mb-2"><a href="#program" class="text-white-50 text-decoration-none hover-white">Program</a></li>
-                    <li class="mb-2"><a href="#galeri" class="text-white-50 text-decoration-none hover-white">Galeri</a></li>
+                    <li class="mb-2"><a href="#program" class="text-white-50 text-decoration-none hover-white">Berita & Kegiatan</a></li>
                 </ul>
             </div>
             

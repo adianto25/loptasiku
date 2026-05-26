@@ -251,11 +251,13 @@
                     };
 
                     try {
+                        const csrfToken = document.querySelector('meta[name="X-CSRF-TOKEN"]').getAttribute('content');
                         const response = await fetch('/api/tickets', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
-                                'X-Requested-With': 'XMLHttpRequest'
+                                'X-Requested-With': 'XMLHttpRequest',
+                                'X-CSRF-TOKEN': csrfToken
                             },
                             body: JSON.stringify(ticketData)
                         });

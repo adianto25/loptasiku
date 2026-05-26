@@ -6,6 +6,5 @@
     <?= $this->include('home/sections/programs') ?>
     <?= $this->include('home/sections/achievements') ?>
     <?= $this->include('home/sections/ticket') ?>
-    <?= $this->include('home/sections/gallery') ?>
     <?= $this->include('home/sections/contact') ?>
 <?= $this->endSection() ?>

@@ -16,16 +16,13 @@
                     <a class="nav-link" href="#tentang">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#program">Program</a>
+                    <a class="nav-link" href="#program">Berita</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#prestasi">Prestasi</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#tiket">Tiket</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#galeri">Galeri</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#kontak">Kontak</a>
