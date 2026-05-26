@@ -36,8 +36,8 @@
         }
         .navbar-custom.scrolled {
             background-color: var(--primary-color);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            padding: 0.5rem 0;
+            padding: 12px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         .navbar-custom .navbar-brand,
         .navbar-custom .nav-link {
@@ -65,13 +65,13 @@
 
         /* Hero Section Full 100vh */
         .hero-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: var(--light-text);
+            background: linear-gradient(rgba(11, 36, 71, 0.85), rgba(11, 36, 71, 0.95)), url('/assets/images/wallpaper.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
-            position: relative;
-            padding-top: 80px; /* Offset for absolute navbar */
         }
         .hero-section h1 {
             font-weight: 800;

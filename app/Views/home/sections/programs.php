@@ -23,7 +23,7 @@
                     <img src="<?= base_url('assets/images/pengibaran.jpeg') ?>" alt="Pengibaran 17 Agustus" class="event-img">
                     <div class="event-overlay">
                         <div class="event-content">
-                            <span class="badge bg-danger mb-2">Puncak Acara</span>
+                            <span class="badge bg-primary mb-2">Puncak Acara</span>
                             <h4 class="fw-bold text-white mb-2">Pengibaran 17 Agustus</h4>
                             <p class="text-white-50 small mb-0">Momen paling sakral dan membanggakan. Detik-detik pengibaran sang saka Merah Putih di hari kemerdekaan dengan penuh khidmat dan kehormatan.</p>
                         </div>
@@ -37,7 +37,7 @@
                     <img src="<?= base_url('assets/images/ldk.jpeg') ?>" alt="Latihan Dasar Kepemimpinan" class="event-img">
                     <div class="event-overlay">
                         <div class="event-content">
-                            <span class="badge bg-warning text-dark mb-2">Pelatihan</span>
+                            <span class="badge bg-primary mb-2">Pelatihan</span>
                             <h4 class="fw-bold text-white mb-2">Latihan Dasar Kepemimpinan</h4>
                             <p class="text-white-50 small mb-0">Kawah candradimuka bagi calon anggota baru Paskibra. Proses rekrutmen ketat yang bertujuan mencetak pemimpin masa depan tangguh dan berkarakter teguh.</p>
                         </div>
@@ -51,7 +51,7 @@
                     <img src="<?= base_url('assets/images/gts.jpeg') ?>" alt="Go To School" class="event-img">
                     <div class="event-overlay">
                         <div class="event-content">
-                            <span class="badge bg-info text-dark mb-2">Edukasi</span>
+                            <span class="badge bg-primary mb-2">Edukasi</span>
                             <h4 class="fw-bold text-white mb-2">Go To School (GTS)</h4>
                             <p class="text-white-50 small mb-0">Ekspedisi edukasi dan pelatihan kepaskibrakaan yang baru saja diselenggarakan dengan sukses di SMK Al-Husain Keling, Kabupaten Jepara.</p>
                         </div>
@@ -65,7 +65,7 @@
                     <img src="<?= base_url('assets/images/seminar.jpeg') ?>" alt="Seminar Kepemudaan" class="event-img">
                     <div class="event-overlay">
                         <div class="event-content">
-                            <span class="badge bg-success mb-2">Akademik</span>
+                            <span class="badge bg-primary mb-2">Akademik</span>
                             <h4 class="fw-bold text-white mb-2">Seminar Kepemudaan</h4>
                             <p class="text-white-50 small mb-0">Wadah diskusi, motivasi, dan edukasi interaktif bagi pelajar tingkat SMA/SMK se-Kota Semarang guna mempersiapkan wawasan kebangsaan dan masa depan.</p>
                         </div>
@@ -79,7 +79,7 @@
                     <img src="<?= base_url('assets/images/liburan.jpeg') ?>" alt="Momen Liburan" class="event-img">
                     <div class="event-overlay">
                         <div class="event-content">
-                            <span class="badge bg-secondary mb-2">Internal</span>
+                            <span class="badge bg-primary mb-2">Internal</span>
                             <h4 class="fw-bold text-white mb-2">Momen Liburan & Keakraban</h4>
                             <p class="text-white-50 small mb-0">Bukan sekadar baris-berbaris. Kami juga menjalin ikatan kekeluargaan (bonding) yang solid antar anggota setelah masa tugas yang melelahkan selesai.</p>
                         </div>
